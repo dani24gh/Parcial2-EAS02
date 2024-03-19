@@ -40,11 +40,11 @@ class Triangulo: public Figura
 int main () {
 
     Cuadrado s(5,0);
-    cout << s.getPerimetro() << endl; // 20
+    cout << s.getPerimetro() << endl; 
     Rectangulo r(5,10);
-    cout << r.getPerimetro() << endl; // 30
+    cout << r.getPerimetro() << endl; 
     Triangulo t(5);
-    cout << t.getPerimetro() << endl; // ~31.41592
+    cout << t.getPerimetro() << endl; 
     return 0;
 }
 
@@ -61,12 +61,3 @@ Figura::Figura(int b, int h)
     this->h = h;
 }
 
-void Figura::setPerimetro(float a)
-{
-    this->p = p;
-}
-
-float Figura::getPerimetro()
-{
-    return this-> p;
-}
